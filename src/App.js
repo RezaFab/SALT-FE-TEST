@@ -5,8 +5,8 @@ import {
   useNavigationType,
   useLocation,
 } from "react-router-dom";
-import TestLoginMobile from "./pages/TestLoginMobile";
-import TestLoginDesktop from "./pages/TestLoginDesktop";
+import TestLogin from './pages/TestLogin';  // Adjust the path accordingly
+
 
 function App() {
   const action = useNavigationType();
@@ -50,8 +50,7 @@ function App() {
 
   return (
     <Routes>
-      <Route path="/" element={<TestLoginMobile />} />
-      <Route path="/test-login-desktop" element={<TestLoginDesktop />} />
+      <Route path="/" element={<TestLogin />} />
     </Routes>
   );
 }
